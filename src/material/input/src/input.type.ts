@@ -15,7 +15,8 @@ import { FieldType } from '@ngx-formly/material/form-field';
       [formlyAttributes]="field"
       [tabindex]="to.tabindex || 0"
       [readonly]="to.readonly"
-      [placeholder]="to.placeholder">
+      [placeholder]="to.placeholder"
+      [pattern]="to.pattern">
     <ng-template #numberTmp>
       <input matInput
              [id]="id"
@@ -23,7 +24,8 @@ import { FieldType } from '@ngx-formly/material/form-field';
              [errorStateMatcher]="errorStateMatcher"
              [formControl]="formControl"
              [formlyAttributes]="field"
-             [placeholder]="to.placeholder">
+             [placeholder]="to.placeholder"
+             [pattern]="to.pattern">
     </ng-template>
   `,
 })
